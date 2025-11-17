@@ -63,7 +63,8 @@ Access the app at: http://localhost:8080/swagger-ui/index.html
 - **Create Event:** `POST /api/events` – register a new event source  
 - **Create Action:** `POST /api/actions` – define an action (email, webhook, etc.)  
 - **Create Trigger Rule:** `POST /api/triggers` – link event → action with priority & enabled flag  
-- **Create Condition:** `POST /api/conditions` – add a condition to a trigger  
+- **Create Condition:** `POST /api/conditions` – add a condition to a trigger
+- **Simulate Event:** `POST /api/events/{id}/simulate` – run rule evaluation for the event and return matched actions
 - **Delete Trigger:** `DELETE /api/triggers/{id}` – remove trigger and its related conditions  
 - **Search Events:** `GET /api/events/search?keyword=...` – search events by keyword  
 
